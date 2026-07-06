@@ -112,84 +112,112 @@ const slides = [
   {
     kicker: "10 / 知识图谱",
     title: "把人物、地点、文件、精神放到同一张关系网里",
-    body: "作品的知识图谱不是装饰，而是帮助观众把碎片信息归位：上海会址回答“从哪里开始”，南湖红船回答“如何完成”，纲领和决议回答“建立什么”，红船精神回答“后来如何被概括和传承”。",
+    body: "这一页把叙事关系画成有方向的思维导图：先从近代中国道路追问进入早期组织，再落到一大召开；一大分出“上海会址”和“南湖红船”两条空间线索，同时产出纲领、决议和中央领导机构，最后沉淀为红船精神。",
     visual: `
-      <div class="graph">
-        <span class="node main">中共一大</span>
-        <span class="node n1">上海会址</span>
-        <span class="node n2">南湖红船</span>
-        <span class="node n3">纲领与决议</span>
-        <span class="node n4">红船精神</span>
-        <span class="node n5">早期组织</span>
+      <div class="flow-map">
+        <div class="flow-node start">近代中国道路追问</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">新文化运动 / 五四运动</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node">早期共产党组织</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-node core">中共一大</div>
+        <div class="flow-branches">
+          <div><span>空间线索</span><b>上海会址</b><em>秘密召开、讨论建党</em></div>
+          <div><span>空间线索</span><b>南湖红船</b><em>转移继续、完成议程</em></div>
+          <div><span>组织成果</span><b>纲领 / 决议 / 中央局</b><em>从分散走向集中</em></div>
+        </div>
+        <div class="flow-down">↓</div>
+        <div class="flow-node end">红船精神：首创、奋斗、奉献</div>
       </div>`
   },
   {
-    kicker: "11 / 数字化方法",
-    title: "数字化不是堆特效，而是让资料更容易被理解",
-    body: "本作品采用“史料图 + 对比修复 + 结构卡片 + 路线图 + 互动检测”的组合。图像修复先处理噪点、划痕、灰雾和局部模糊，再根据建筑材质、木质器物、水面反光等线索进行色彩渲染，让观众能把空间、器物和事件关系看得更清楚。",
+    kicker: "11 / 补充修复",
+    title: "石库门门楣：从灰度纹理到砖石层次",
+    body: "这一组展示石库门门楣的修复前后。修复前保留旧照片的灰度、轻微模糊和年代质感；修复后根据砖墙纹理、石框边缘、门洞阴影和里弄纵深进行清晰化与色彩渲染，让观众更容易辨认上海会址的建筑特征。",
     visual: `
-      <div class="restoration-gallery">
-        <img src="assets/archive/artifact-restoration-collage.png" alt="石库门、会议桌、红船船舱与湖上画舫 AI 修复示意图">
-        <div class="restoration-notes">
-          <b>补充修复对象</b>
-          <span>石库门门楣、会议桌陈设、红船船舱、湖上画舫</span>
-          <b>渲染逻辑</b>
-          <span>从黑白资料的纹理、明暗、材质和环境线索出发，补充可辨认的色彩层次。</span>
-        </div>
+      <div class="compare">
+        <figure><img src="assets/archive/shikumen-before.png" alt="石库门门楣修复前示意图"><figcaption>修复前：灰度旧照片质感</figcaption></figure>
+        <figure><img src="assets/archive/shikumen-restored.png" alt="石库门门楣修复后示意图"><figcaption>修复后：砖石与门洞层次渲染</figcaption></figure>
       </div>`
   },
   {
-    kicker: "12 / 互动检测",
-    title: "三道选择题：把历史线索真正读懂",
-    body: "这一页用三道题检查观众是否理解作品的核心线索：一大会址为什么重要，南湖转移说明什么，AI 修复图应该怎样使用。答题后会即时显示对错和解释。",
+    kicker: "12 / 补充修复",
+    title: "会议桌陈设：把会议空间变得可感",
+    body: "这一组围绕会议桌、木椅、茶杯、笔记本和油灯等室内陈设展开。修复前强调资料感；修复后通过木质桌面、器物明暗、窗边光线和室内色调，帮助观众想象秘密会议的空间尺度与现场氛围。",
     visual: `
-      <div class="quiz-stack">
-        <div class="quiz-panel">
-          <h3>1. 一大会址在作品中最主要的作用是什么？</h3>
-          <div class="quiz-options">
-            <button data-ok="true">呈现组织创建从秘密会议开始的真实空间</button>
-            <button data-ok="false">证明会议只是一次普通参观活动</button>
-            <button data-ok="false">用建筑外观替代全部历史解释</button>
-          </div>
-          <p class="quiz-result"></p>
-        </div>
-        <div class="quiz-panel">
-          <h3>2. 上海到南湖的转移最能说明什么？</h3>
-          <div class="quiz-options">
-            <button data-ok="false">会议主题发生了根本改变</button>
-            <button data-ok="true">会议目标没有被干扰打断，议程继续完成</button>
-            <button data-ok="false">地点变化比会议成果更重要</button>
-          </div>
-          <p class="quiz-result"></p>
-        </div>
-        <div class="quiz-panel">
-          <h3>3. AI 修复图在本作品中应该怎样理解？</h3>
-          <div class="quiz-options">
-            <button data-ok="false">它就是原始彩色历史照片</button>
-            <button data-ok="false">它可以替代黑白史料图</button>
-            <button data-ok="true">它根据纹理、明暗和材质线索帮助观众辨认画面</button>
-          </div>
-          <p class="quiz-result"></p>
-        </div>
+      <div class="compare">
+        <figure><img src="assets/archive/meeting-table-before.png" alt="会议桌陈设修复前示意图"><figcaption>修复前：灰度室内资料感</figcaption></figure>
+        <figure><img src="assets/archive/meeting-table-restored.png" alt="会议桌陈设修复后示意图"><figcaption>修复后：木质、器物与光线渲染</figcaption></figure>
       </div>`
   },
   {
-    kicker: "13 / 互动检测",
-    title: "理解检测：南湖转移最能说明什么",
-    body: "互动页不是为了凑形式，而是把全篇最关键的理解点压缩成一道题：会议地点变了，但会议目标、议程推进和组织创建没有被打断。答题反馈会解释为什么这个选择成立。",
+    kicker: "13 / 补充修复",
+    title: "红船船舱：从轮廓辨认到木构细节",
+    body: "这一组展示红船船舱与木质船体的细节。修复前保留黑白轮廓，修复后依据船板纹理、窗框结构、木材深浅和水面反光进行渲染，让观众看到“红船”作为具体空间载体的细节。",
+    visual: `
+      <div class="compare">
+        <figure><img src="assets/archive/boat-cabin-before.png" alt="红船船舱修复前示意图"><figcaption>修复前：船舱轮廓与旧照片灰度</figcaption></figure>
+        <figure><img src="assets/archive/boat-cabin-restored.png" alt="红船船舱修复后示意图"><figcaption>修复后：木构、窗框与船体渲染</figcaption></figure>
+      </div>`
+  },
+  {
+    kicker: "14 / 补充修复",
+    title: "湖上画舫：把转移完成的空间关系讲清楚",
+    body: "这一组把湖面、岸线、树影和画舫放在同一画面中。修复前强调资料图的年代感，修复后通过水面明暗、船体结构和岸线植被的色彩层次，帮助观众理解南湖场景不是背景，而是会议继续完成的空间条件。",
+    visual: `
+      <div class="compare">
+        <figure><img src="assets/archive/lake-boat-before.png" alt="湖上画舫修复前示意图"><figcaption>修复前：灰度湖面与船体关系</figcaption></figure>
+        <figure><img src="assets/archive/lake-boat-restored.png" alt="湖上画舫修复后示意图"><figcaption>修复后：湖面、岸线与画舫渲染</figcaption></figure>
+      </div>`
+  },
+  {
+    kicker: "15 / 互动检测",
+    title: "选择题一：一大会址为什么重要",
+    body: "这一题检查观众是否理解上海会址的意义。它不是单纯的建筑外观展示，而是组织创建、秘密会议和早期革命活动相互连接的历史现场。",
     visual: `
       <div class="quiz-panel">
-        <h3>中共一大后期转移到嘉兴南湖继续举行，最能说明什么？</h3>
+        <h3>一大会址在作品中最主要的作用是什么？</h3>
         <div class="quiz-options">
-          <button data-ok="false">会议只是临时改换参观地点</button>
-          <button data-ok="true">会议目标没有被干扰中断，革命信念与组织纪律继续推进</button>
-          <button data-ok="false">会议内容和建党目标发生了根本变化</button>
+          <button data-ok="true">呈现组织创建从秘密会议开始的真实空间</button>
+          <button data-ok="false">证明会议只是一次普通参观活动</button>
+          <button data-ok="false">用建筑外观替代全部历史解释</button>
         </div>
-        <p id="quizResult" class="quiz-result"></p>
+        <p class="quiz-result"></p>
       </div>`
   },
   {
-    kicker: "14 / 引用与边界",
+    kicker: "16 / 互动检测",
+    title: "选择题二：上海到南湖的转移说明什么",
+    body: "这一题检查观众是否理解地点变化背后的历史逻辑。会议转移不是叙事中断，而是说明目标、议程和组织纪律在干扰中继续推进。",
+    visual: `
+      <div class="quiz-panel">
+        <h3>上海到南湖的转移最能说明什么？</h3>
+        <div class="quiz-options">
+          <button data-ok="false">会议主题发生了根本改变</button>
+          <button data-ok="true">会议目标没有被干扰打断，议程继续完成</button>
+          <button data-ok="false">地点变化比会议成果更重要</button>
+        </div>
+        <p class="quiz-result"></p>
+      </div>`
+  },
+  {
+    kicker: "17 / 互动检测",
+    title: "选择题三：AI 修复图应该怎样理解",
+    body: "这一题检查观众是否理解图像修复的边界。AI 修复图不是原始彩色照片，也不能替代黑白史料；它的作用是依据纹理、明暗和材质线索帮助观众辨认画面。",
+    visual: `
+      <div class="quiz-panel">
+        <h3>AI 修复图在本作品中应该怎样理解？</h3>
+        <div class="quiz-options">
+          <button data-ok="false">它就是原始彩色历史照片</button>
+          <button data-ok="false">它可以替代黑白史料图</button>
+          <button data-ok="true">它根据纹理、明暗和材质线索帮助观众辨认画面</button>
+        </div>
+        <p class="quiz-result"></p>
+      </div>`
+  },
+  {
+    kicker: "18 / 引用与边界",
     title: "资料使用要说明来源，也要说明加工边界",
     body: "页面中使用的历史图片应标注为公开资料图；修复上色图应标注为辅助效果。文字部分以重新组织、概括和解释为主，不大段搬运原文。这样既能满足作品展示，也能让观众知道哪些是史实依据，哪些是数字化处理。",
     visual: `
@@ -201,14 +229,14 @@ const slides = [
       </div>`
   },
   {
-    kicker: "15 / 作品总结",
+    kicker: "19 / 作品总结",
     title: "让红色资源从“看过”走向“看懂”",
     body: "这版 H5 的核心不是把页面做得热闹，而是让观众沿着清晰路径理解：近代中国为什么需要新的政治组织，一大如何在上海召开并在南湖完成，红船精神为什么不是抽象口号，而是从具体历史行动中提炼出来的价值结构。",
     visual: `
       <div class="final-panel">
         <b>提交网址</b>
         <span>https://walala11.github.io/</span>
-        <p>16 页 H5 翻页作品；包含史料图、修复前后对比、时间线、路线图、知识图谱、展陈脚本和互动检测。</p>
+        <p>20 页 H5 翻页作品；包含史料图、修复前后对比、时间线、路线图、逻辑思维导图、四组补充修复图和三页互动选择题。</p>
       </div>`
   }
 ];
