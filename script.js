@@ -3,164 +3,187 @@ const slides = [
     type: "cover",
     kicker: "红色资源数字化 H5 作品",
     title: "从石库门到南湖红船",
-    lead: "以中共一大会址与嘉兴南湖红船为核心案例，运用 AI 修复上色、知识图谱、互动问答和微视频分镜，呈现红色起点的历史逻辑与精神传承。",
-    visual: `<img class="hero-img" src="assets/hero-red-boat.png" alt="石库门与南湖红船意象图"><div class="hero-mask"></div>`
+    body: "这不是把两处景点简单并列，而是把“会议为何发生、为何转移、如何完成、留下什么精神遗产”做成一条可阅读、可观看、可互动的历史链条。",
+    visual: `
+      <div class="route-hero">
+        <div class="route-card shanghai"><b>上海</b><span>望志路 106 号</span><small>组织创建的现场</small></div>
+        <div class="route-line"><i></i><i></i><i></i></div>
+        <div class="route-card jiaxing"><b>嘉兴</b><span>南湖画舫</span><small>会议完成的现场</small></div>
+      </div>`
   },
   {
     kicker: "01 / 选题定位",
-    title: "为什么选择“一处会址、一艘红船”",
-    body: "中共一大会址和南湖红船不是两个孤立景点，而是一条红色叙事链：上海会址见证组织创建的开始，南湖红船见证会议在复杂环境中的继续完成。二者共同构成理解中国共产党诞生的重要空间坐标。",
-    visual: `<div class="card-grid">
-      <div class="mini-card"><strong>上海会址</strong><p>秘密会议空间，体现从思想传播走向组织创建。</p></div>
-      <div class="mini-card"><strong>南湖红船</strong><p>湖上继续议程，体现危机中的信念延续。</p></div>
-      <div class="mini-card"><strong>会议成果</strong><p>纲领、决议、中央局，形成政党组织基础。</p></div>
-      <div class="mini-card"><strong>精神升华</strong><p>首创、奋斗、奉献，构成红船精神的价值内核。</p></div>
-    </div>`
+    title: "一大会址与南湖红船不是两个孤立符号",
+    body: "上海石库门提供了秘密开会、讨论纲领、建立组织的现实空间；嘉兴南湖则见证了会议在外部干扰后继续完成。作品把二者放在同一条叙事线上：从思想传播到组织创建，从城市里弄到湖上画舫，从会议过程到精神提炼。",
+    visual: `
+      <div class="evidence-grid">
+        <article><b>空间</b><span>石库门住宅、里弄环境、法租界背景，说明会议隐蔽性。</span></article>
+        <article><b>事件</b><span>1921 年 7 月下旬在上海召开，后转移到嘉兴南湖继续。</span></article>
+        <article><b>人物</b><span>各地早期共产党组织代表与共产国际代表共同参与。</span></article>
+        <article><b>成果</b><span>通过党的纲领和决议，产生中央领导机构。</span></article>
+      </div>`
   },
   {
     kicker: "02 / 历史前提",
-    title: "一大的召开，来自近代中国的道路追问",
-    body: "近代以来，中国社会经历民族危机、制度危机与道路危机。多种救国方案相继受挫后，新文化运动、五四运动和马克思主义传播推动先进分子重新思考中国前途。中共一大正是在这种历史追问中出现。",
-    visual: `<div class="timeline">
-      <div class="time-row"><span>危机</span><p>民族危机与社会危机推动救亡图存。</p></div>
-      <div class="time-row"><span>启蒙</span><p>新文化运动打开思想解放空间。</p></div>
-      <div class="time-row"><span>转向</span><p>五四运动促进马克思主义广泛传播。</p></div>
-      <div class="time-row"><span>建党</span><p>早期组织汇合，形成全国性政党创建条件。</p></div>
-    </div>`
+    title: "为什么 1921 年会出现这样一次秘密会议",
+    body: "近代以来，中国在民族危机、制度危机和社会动员困境中反复寻找出路。新文化运动打开思想讨论空间，五四运动推动青年、工人和知识分子的政治觉醒，马克思主义传播与各地早期组织建立，使“成立一个全国性政党”从观念变成了可操作的行动。",
+    visual: `
+      <div class="timeline">
+        <div><time>1915 前后</time><p>新文化运动兴起，民主、科学、社会改造等议题进入公共讨论。</p></div>
+        <div><time>1919</time><p>五四运动扩大社会动员，工人阶级开始以更醒目的方式进入政治现场。</p></div>
+        <div><time>1920</time><p>上海、北京等地早期共产党组织相继建立，出版、翻译、工人夜校等工作展开。</p></div>
+        <div><time>1921</time><p>各地代表汇集上海，召开中国共产党第一次全国代表大会。</p></div>
+      </div>`
   },
   {
-    kicker: "03 / 上海石库门",
-    title: "会址不是背景，而是组织化开端的现场",
-    body: "石库门建筑的隐蔽性和城市位置，使它成为秘密会议的现实空间。这里的意义不只在“会议发生过”，更在于代表们讨论党的纲领、工作计划和组织原则，把分散的思想与地方组织转化为全国性政党建设。",
-    visual: `<div class="photo-frame"><img src="assets/archive/site-bw.jpg" alt="中共一大会址黑白历史照片"><div class="caption">中共一大会址黑白历史资料图。来源：共产党员网公开资料。</div></div>`
+    kicker: "03 / 上海会址",
+    title: "石库门的意义：它是一次组织化开端的现场",
+    body: "一大会址位于当年上海法租界望志路一带，外观是普通石库门住宅。正因为普通，它适合秘密会谈；也正因为地处上海，它连接出版、工运、翻译、联络等早期革命活动。H5 中保留黑白资料图，是为了让观众先看到“真实空间”，再进入后续解释。",
+    visual: `
+      <figure class="photo-frame">
+        <img src="assets/archive/site-bw.jpg" alt="中共一大会址黑白历史资料图">
+        <figcaption>中共一大会址黑白资料图。页面以史料图作为第一层依据，再展开结构化说明。</figcaption>
+      </figure>`
   },
   {
-    kicker: "04 / AI 图像修复",
-    title: "中共一大会址：黑白史料与 AI 上色对照",
-    body: "AI 上色的目的不是替代史料，而是帮助观众更直观地感受建筑空间。页面保留黑白原图作为依据，同时展示彩色复原效果，并明确标注其为算法推断生成的辅助图像。",
-    visual: `<div class="compare">
-      <figure><img src="assets/archive/site-bw.jpg" alt="中共一大会址黑白图"><figcaption>原始黑白资料图</figcaption></figure>
-      <figure><img src="assets/archive/site-colorized.png" alt="中共一大会址 AI 上色图"><figcaption>AI 修复上色效果</figcaption></figure>
-    </div>`
+    kicker: "04 / 修复前后",
+    title: "一大会址图像对比：修复图只做辅助，不替代史料",
+    body: "对比页保留“原始黑白资料图”和“修复上色效果”两张图：左侧用于确认资料来源和历史质感，右侧用于帮助观众辨认建筑、门窗、街面层次。展示时明确标注修复图是视觉辅助，不能把算法推断当成原始证据。",
+    visual: `
+      <div class="compare">
+        <figure><img src="assets/archive/site-bw.jpg" alt="中共一大会址黑白图"><figcaption>修复前：原始黑白资料图</figcaption></figure>
+        <figure><img src="assets/archive/site-colorized.png" alt="中共一大会址修复上色图"><figcaption>修复后：辅助上色效果</figcaption></figure>
+      </div>`
   },
   {
     kicker: "05 / 会议转移",
-    title: "从上海到南湖：地点变化背后的信念延续",
-    body: "会议后期受到干扰后，代表们转移到嘉兴南湖继续开会。这个变化不是叙事中断，而是说明会议目标没有被外部压力打断，组织纪律和政治信念在危机中继续推进。",
-    visual: `<div class="timeline">
-      <div class="time-row"><span>上海</span><p>石库门空间内启动会议，讨论建党关键问题。</p></div>
-      <div class="time-row"><span>干扰</span><p>会议环境发生变化，需要迅速调整地点。</p></div>
-      <div class="time-row"><span>嘉兴</span><p>转移到南湖游船，继续完成会议议程。</p></div>
-      <div class="time-row"><span>完成</span><p>通过纲领、决议并产生中央领导机构。</p></div>
-    </div>`
+    title: "从上海到南湖：地点变化背后是会议目标的延续",
+    body: "会议后期受到干扰后，代表转移到嘉兴南湖继续议程。这里的重点不是“换了一个风景更好的地点”，而是组织纪律、议程意识和政治目标没有被突发情况打断。H5 用路线图呈现转移过程，让观众理解“中断”与“完成”之间的张力。",
+    visual: `
+      <div class="transfer-map">
+        <div class="station"><b>上海</b><span>秘密召开</span><small>讨论纲领、决议、组织原则</small></div>
+        <div class="track"><i></i><i></i><i></i><i></i></div>
+        <div class="station"><b>嘉兴</b><span>继续会议</span><small>完成议程，宣告新的政党诞生</small></div>
+      </div>`
   },
   {
     kicker: "06 / 南湖红船",
-    title: "一艘游船，成为红色起点的精神象征",
-    body: "南湖红船的意义在于，它承载了会议继续完成的重要历史瞬间。红船后来成为中国革命源头的重要象征，也让抽象的建党精神获得了具体可感的空间载体。",
-    visual: `<div class="photo-frame"><img src="assets/archive/boat-bw.jpg" alt="南湖红船黑白历史照片"><div class="caption">南湖红船相关黑白历史资料图。来源：共产党员网公开资料。</div></div>`
+    title: "红船的价值：把抽象的建党历史落到具体空间",
+    body: "南湖画舫承载的是会议继续完成的关键瞬间。它不是孤立的纪念物，而是一次政治行动在复杂环境中完成的空间证据。作品在这一页不做过度渲染，只用黑白资料图和简短注释，把观众注意力放回“会议如何完成”。",
+    visual: `
+      <figure class="photo-frame">
+        <img src="assets/archive/boat-bw.jpg" alt="南湖红船黑白历史资料图">
+        <figcaption>南湖红船相关黑白资料图。它在页面中作为“会议完成地”的视觉锚点。</figcaption>
+      </figure>`
   },
   {
-    kicker: "07 / AI 图像修复",
-    title: "南湖红船：黑白史料与 AI 上色对照",
-    body: "红船上色复原保留船体、湖面、岸线和树木关系，只进行去噪、清晰化和自然色彩补全。它服务于沉浸式理解，但不能替代黑白原始史料。",
-    visual: `<div class="compare">
-      <figure><img src="assets/archive/boat-bw.jpg" alt="南湖红船黑白图"><figcaption>原始黑白资料图</figcaption></figure>
-    </div>`
+    kicker: "07 / 修复前后",
+    title: "南湖红船图像对比：第二组对比图已保留",
+    body: "这一页恢复并保留第二张修复后图片。左图强调资料本身的年代感，右图帮助观众辨认船体、湖面、岸线和树影关系。为了减少 AI 痕迹，页面说明会把它定位为“辅助识别图”，不把它包装成真实彩色照片。",
+    visual: `
+      <div class="compare">
+        <figure><img src="assets/archive/boat-bw.jpg" alt="南湖红船黑白图"><figcaption>修复前：原始黑白资料图</figcaption></figure>
+        <figure><img src="assets/archive/boat-colorized.png" alt="南湖红船修复上色图"><figcaption>修复后：辅助上色效果</figcaption></figure>
+      </div>`
   },
   {
     kicker: "08 / 会议成果",
-    title: "一大的深层意义：把理想转化为组织",
-    body: "中共一大的成果不只是“开了一次会”。它通过党的第一个纲领和第一个决议，确立奋斗目标、组织原则和工作方向，并产生中央局，使早期地方组织进入全国性政党建设阶段。",
-    visual: `<div class="matrix">
-      <div class="matrix-row header"><span>层面</span><span>历史内容</span><span>展陈理解</span></div>
-      <div class="matrix-row"><span>纲领</span><span>明确党的性质、目标和组织原则。</span><span>理想获得制度化表达。</span></div>
-      <div class="matrix-row"><span>决议</span><span>强调宣传马克思主义、组织工人运动。</span><span>思想连接现实群众。</span></div>
-      <div class="matrix-row"><span>中央局</span><span>产生中央领导机构。</span><span>组织从分散走向集中。</span></div>
-    </div>`
+    title: "一大的成果不是“开过一次会”，而是建立了组织框架",
+    body: "会议讨论并通过党的纲领、决议等内容，确定政党的性质、奋斗目标和组织原则，并产生中央领导机构。数字化表达不能只写“意义重大”，更要让观众看见：一个新的政治组织如何从分散的地方力量，走向全国性组织建设。",
+    visual: `
+      <div class="matrix">
+        <div class="head"><span>成果</span><span>具体内容</span><span>展陈表达</span></div>
+        <div><span>纲领</span><span>确立党的性质、目标和组织原则</span><span>用关键词卡片呈现制度化表达</span></div>
+        <div><span>决议</span><span>强调宣传、工人运动和组织工作</span><span>连接“思想传播”和“群众工作”</span></div>
+        <div><span>机构</span><span>产生中央领导机构</span><span>说明从地方小组走向集中领导</span></div>
+      </div>`
   },
   {
     kicker: "09 / 红船精神",
-    title: "红船精神：历史现场的价值升华",
-    body: "红船精神可以理解为三个层次：开天辟地、敢为人先的首创精神；坚定理想、百折不挠的奋斗精神；立党为公、忠诚为民的奉献精神。它不是口号，而是从建党实践中提炼出的价值结构。",
-    visual: `<div class="matrix">
-      <div class="matrix-row header"><span>精神关键词</span><span>对应历史现场</span><span>今日启示</span></div>
-      <div class="matrix-row"><span>首创</span><span>探索新的革命道路和组织形态。</span><span>敢于面对新问题。</span></div>
-      <div class="matrix-row"><span>奋斗</span><span>会场受干扰后仍转移继续。</span><span>困难中保持方向。</span></div>
-      <div class="matrix-row"><span>奉献</span><span>把群众工作写入实践方向。</span><span>把个人成长融入公共价值。</span></div>
-    </div>`
+    title: "精神阐释要回到历史现场，而不是只喊口号",
+    body: "“开天辟地、敢为人先”的首创精神，对应的是在旧制度和旧道路之外寻找新道路；“坚定理想、百折不挠”的奋斗精神，对应的是会议受干扰后仍然继续推进；“立党为公、忠诚为民”的奉献精神，对应的是把政党目标与人民解放、社会改造联系起来。",
+    visual: `
+      <div class="spirit-board">
+        <article><b>首创</b><p>从思想传播走向政党创建，不只是讨论主义，而是建立组织。</p></article>
+        <article><b>奋斗</b><p>面对搜查和转移，会议议程没有停止，目标没有松动。</p></article>
+        <article><b>奉献</b><p>把个人选择放入民族独立、人民解放和社会改造的公共目标中。</p></article>
+      </div>`
   },
   {
-    kicker: "10 / 红色知识图谱",
-    title: "用语义结构连接人物、地点、会议与精神",
-    body: "数字化作品不能只堆资料，更要建立关系。本页把“中共一大”放在中心，连接上海石库门、南湖红船、纲领决议和红船精神，形成可视化知识图谱。",
-    visual: `<div class="graph">
-      <svg viewBox="0 0 900 430" aria-hidden="true">
-        <line x1="450" y1="215" x2="175" y2="90"></line>
-        <line x1="450" y1="215" x2="725" y2="90"></line>
-        <line x1="450" y1="215" x2="175" y2="340"></line>
-        <line x1="450" y1="215" x2="725" y2="340"></line>
-      </svg>
-      <span class="node main">中共一大</span><span class="node n1">上海石库门</span><span class="node n2">南湖红船</span><span class="node n3">纲领决议</span><span class="node n4">红船精神</span>
-    </div>`
+    kicker: "10 / 知识图谱",
+    title: "把人物、地点、文件、精神放到同一张关系网里",
+    body: "作品的知识图谱不是装饰，而是帮助观众把碎片信息归位：上海会址回答“从哪里开始”，南湖红船回答“如何完成”，纲领和决议回答“建立什么”，红船精神回答“后来如何被概括和传承”。",
+    visual: `
+      <div class="graph">
+        <span class="node main">中共一大</span>
+        <span class="node n1">上海会址</span>
+        <span class="node n2">南湖红船</span>
+        <span class="node n3">纲领与决议</span>
+        <span class="node n4">红船精神</span>
+        <span class="node n5">早期组织</span>
+      </div>`
   },
   {
     kicker: "11 / 数字化方法",
-    title: "AI 技术不是点缀，而是资料再组织工具",
-    body: "本作品使用 AI 辅助图像修复上色、语义整理、解说词组织和交互问答设计。技术的作用不是制造虚假历史，而是帮助观众更清楚地看见史料、理解关系、记住精神。",
-    visual: `<div class="card-grid">
-      <div class="mini-card"><strong>图像修复</strong><p>黑白史料去噪、清晰化、上色展示。</p></div>
-      <div class="mini-card"><strong>语义整理</strong><p>把资料转成提纲、时间线和图谱。</p></div>
-      <div class="mini-card"><strong>语音解说</strong><p>形成可听的 H5 导览体验。</p></div>
-      <div class="mini-card"><strong>互动问答</strong><p>用反馈机制强化学习记忆。</p></div>
-    </div>`
+    title: "数字化不是堆特效，而是让资料更容易被理解",
+    body: "本作品采用“史料图 + 对比修复 + 结构卡片 + 路线图 + 互动检测”的组合。图像修复只解决辨认问题；结构卡片解决信息分层；互动题检验观众是否理解“转移并不等于中断”这一关键逻辑。",
+    visual: `
+      <div class="method-list">
+        <div><b>史料底图</b><span>先看原始图，避免视觉效果压过史料本身。</span></div>
+        <div><b>辅助修复</b><span>保留“修复前/修复后”并列，明确修复图的推断属性。</span></div>
+        <div><b>关系重组</b><span>用时间线、矩阵、图谱把文字资料转成可扫读结构。</span></div>
+        <div><b>互动反馈</b><span>用选择题让观众确认自己理解的是历史逻辑而非表面信息。</span></div>
+      </div>`
   },
   {
-    kicker: "12 / 微视频分镜",
-    title: "如果扩展成短视频，可以这样讲",
-    body: "H5 作品还可扩展为 60 秒微视频：以石库门开场，以南湖红船转场，以红船精神收束。视频不需要堆砌史料，而应围绕“为什么出发、如何继续、留下什么精神”三问展开。",
-    visual: `<div class="storyboard">
-      <div class="shot"><strong>镜头一</strong><p>石库门旧照淡入，旁白提出近代中国道路追问。</p></div>
-      <div class="shot"><strong>镜头二</strong><p>地图线从上海移动到嘉兴，表现会场转移。</p></div>
-      <div class="shot"><strong>镜头三</strong><p>红船与精神关键词出现，完成价值升华。</p></div>
-    </div>`
+    kicker: "12 / 展陈脚本",
+    title: "如果做成 60 秒微视频，应围绕三个问题推进",
+    body: "短视频版本不需要把资料念成流水账。前 15 秒提出近代中国道路追问；中间 30 秒用上海会址、会议转移、南湖红船形成事件推进；最后 15 秒回到红船精神，说明它为什么能从一个历史现场转化为今天仍可理解的价值表达。",
+    visual: `
+      <div class="storyboard">
+        <div><b>开场</b><span>黑白会址图淡入，字幕提出“为什么需要一个新的组织？”</span></div>
+        <div><b>转折</b><span>路线从上海移向嘉兴，强调外部干扰与会议继续。</span></div>
+        <div><b>完成</b><span>红船图出现，叠加纲领、决议、中央领导机构三个关键词。</span></div>
+        <div><b>收束</b><span>用首创、奋斗、奉献对应历史现场，而不是空喊口号。</span></div>
+      </div>`
   },
   {
     kicker: "13 / 互动检测",
-    title: "红船精神互动问答",
-    body: "点击选项完成知识检测。本页使用文字说明与交互问答两种形式，帮助观众从“看过”变成“理解”。",
-    visual: `<div class="panel quiz-panel">
-      <h3>中共一大后期转移到嘉兴南湖继续举行，最能说明什么？</h3>
-      <div class="quiz-options">
-        <button data-ok="false">会议只是临时改换参观地点</button>
-        <button data-ok="true">会议目标没有被干扰中断，革命信念与组织纪律继续推进</button>
-        <button data-ok="false">会议内容和建党目标发生根本变化</button>
-      </div>
-      <p class="quiz-result" id="quizResult"></p>
-    </div>`
+    title: "理解检测：南湖转移最能说明什么",
+    body: "互动页不是为了凑形式，而是把全篇最关键的理解点压缩成一道题：会议地点变了，但会议目标、议程推进和组织创建没有被打断。答题反馈会解释为什么这个选择成立。",
+    visual: `
+      <div class="quiz-panel">
+        <h3>中共一大后期转移到嘉兴南湖继续举行，最能说明什么？</h3>
+        <div class="quiz-options">
+          <button data-ok="false">会议只是临时改换参观地点</button>
+          <button data-ok="true">会议目标没有被干扰中断，革命信念与组织纪律继续推进</button>
+          <button data-ok="false">会议内容和建党目标发生了根本变化</button>
+        </div>
+        <p id="quizResult" class="quiz-result"></p>
+      </div>`
   },
   {
-    kicker: "14 / 引用规范",
-    title: "资料引用与比例控制",
-    body: "本作品引用公开资料时只摘取事实信息、图片来源和经典表述，主体文字为重新整理和分析，避免大段照搬。图片均标注来源，AI 上色图明确注明为复原效果。",
-    visual: `<div class="card-grid">
-      <div class="source-card"><strong>资料名称</strong><p>《中共一大会址：伟大开端从这里开启》</p></div>
-      <div class="source-card"><strong>资料来源</strong><p>共产党员网公开文章及配图。</p></div>
-      <div class="source-card"><strong>使用方式</strong><p>核对事实、引用图片、提炼展陈逻辑。</p></div>
-      <div class="source-card"><strong>比例控制</strong><p>以原创概括和分析为主，引用内容控制在要求范围内。</p></div>
-    </div>`
+    kicker: "14 / 引用与边界",
+    title: "资料使用要说明来源，也要说明加工边界",
+    body: "页面中使用的历史图片应标注为公开资料图；修复上色图应标注为辅助效果。文字部分以重新组织、概括和解释为主，不大段搬运原文。这样既能满足作品展示，也能让观众知道哪些是史实依据，哪些是数字化处理。",
+    visual: `
+      <div class="source-grid">
+        <article><b>图像来源</b><span>公开历史资料图，用于展示会址与红船的基本形貌。</span></article>
+        <article><b>加工说明</b><span>上色图仅作辅助辨认，不视为真实彩色史料。</span></article>
+        <article><b>文字策略</b><span>围绕事实、关系、意义重新组织，避免空泛套话。</span></article>
+        <article><b>展示边界</b><span>不虚构历史细节，不用视觉效果替代史料判断。</span></article>
+      </div>`
   },
   {
     kicker: "15 / 作品总结",
-    title: "让红色资源从“可参观”走向“可理解、可互动、可传播”",
-    body: "本 H5 以两处红色资源为核心，用 16 页结构完成从史实、史料、AI 修复、精神解读到互动检测的数字化表达。最终目标不是替代历史现场，而是让更多人通过屏幕进入历史现场、理解红色基因。",
-    visual: `<div class="quote-card">
-      <strong>提交网址</strong>
-      <p>https://walala11.github.io/</p>
-      <br>
-      <strong>作品形式</strong>
-      <p>16 页 H5 翻页网页；每页包含文字与图片、图表、动画或互动等至少两种展现形式。</p>
-    </div>`
+    title: "让红色资源从“看过”走向“看懂”",
+    body: "这版 H5 的核心不是把页面做得热闹，而是让观众沿着清晰路径理解：近代中国为什么需要新的政治组织，一大如何在上海召开并在南湖完成，红船精神为什么不是抽象口号，而是从具体历史行动中提炼出来的价值结构。",
+    visual: `
+      <div class="final-panel">
+        <b>提交网址</b>
+        <span>https://walala11.github.io/</span>
+        <p>16 页 H5 翻页作品；包含史料图、修复前后对比、时间线、路线图、知识图谱、展陈脚本和互动检测。</p>
+      </div>`
   }
 ];
 
@@ -177,23 +200,21 @@ function renderSlides() {
   deck.innerHTML = slides.map((slide, index) => {
     const isCover = slide.type === "cover";
     return `
-      <section class="slide ${isCover ? "cover dark" : ""}" data-index="${index}">
-        ${isCover ? slide.visual : ""}
+      <section class="slide ${isCover ? "cover" : ""}" data-index="${index}">
         <div class="content">
           <div class="text-block">
             <p class="kicker">${slide.kicker}</p>
             ${isCover ? `<h1>${slide.title}</h1>` : `<h2>${slide.title}</h2>`}
-            <p class="${isCover ? "lead" : "body-copy"}">${slide.lead || slide.body}</p>
+            <p class="body-copy">${slide.body}</p>
           </div>
-          <div class="visual">
-            ${isCover ? "" : slide.visual}
-          </div>
+          <div class="visual">${slide.visual}</div>
         </div>
-      </section>
-    `;
+      </section>`;
   }).join("");
 
-  dots.innerHTML = slides.map((_, index) => `<button class="dot" type="button" aria-label="第 ${index + 1} 页" data-index="${index}"></button>`).join("");
+  dots.innerHTML = slides.map((_, index) =>
+    `<button class="dot" type="button" aria-label="第 ${index + 1} 页" data-index="${index}"></button>`
+  ).join("");
 }
 
 function update() {
@@ -220,8 +241,8 @@ dots.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowDown" || event.key === "PageDown" || event.key === "ArrowRight") goTo(current + 1);
-  if (event.key === "ArrowUp" || event.key === "PageUp" || event.key === "ArrowLeft") goTo(current - 1);
+  if (["ArrowDown", "PageDown", "ArrowRight", " "].includes(event.key)) goTo(current + 1);
+  if (["ArrowUp", "PageUp", "ArrowLeft"].includes(event.key)) goTo(current - 1);
 });
 
 document.addEventListener("click", (event) => {
@@ -233,6 +254,6 @@ document.addEventListener("click", (event) => {
     button.classList.toggle("wrong", button === option && button.dataset.ok !== "true");
   });
   document.getElementById("quizResult").textContent = option.dataset.ok === "true"
-    ? "回答正确：这体现了会议目标没有中断，以及革命者在复杂环境中的坚定与机敏。"
-    : "再想一想：关键不是地点本身，而是会议在干扰中继续推进。";
+    ? "回答正确：关键不在地点变化本身，而在会议目标、组织纪律和建党议程没有被突发干扰打断。"
+    : "再想一想：南湖转移不是观光式换场，而是会议在风险环境中继续完成。";
 });
