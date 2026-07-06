@@ -79,7 +79,7 @@ const slides = [
   {
     kicker: "07 / 修复前后",
     title: "南湖红船图像对比：第二组对比图已保留",
-    body: "这一页恢复并保留第二张修复后图片。左图强调资料本身的年代感，右图帮助观众辨认船体、湖面、岸线和树影关系。为了减少 AI 痕迹，页面说明会把它定位为“辅助识别图”，不把它包装成真实彩色照片。",
+    body: "这一页恢复并保留第二张修复后图片。左图强调资料本身的年代感，右图展示 AI 如何在不改变船体结构的前提下进行渲染：先增强轮廓和明暗层次，再依据木质船身、湖面反光、岸线植被和树影关系补充自然色彩，帮助观众更清楚地辨认画面信息。",
     visual: `
       <div class="compare">
         <figure><img src="assets/archive/boat-bw.jpg" alt="南湖红船黑白图"><figcaption>修复前：原始黑白资料图</figcaption></figure>
@@ -126,25 +126,51 @@ const slides = [
   {
     kicker: "11 / 数字化方法",
     title: "数字化不是堆特效，而是让资料更容易被理解",
-    body: "本作品采用“史料图 + 对比修复 + 结构卡片 + 路线图 + 互动检测”的组合。图像修复只解决辨认问题；结构卡片解决信息分层；互动题检验观众是否理解“转移并不等于中断”这一关键逻辑。",
+    body: "本作品采用“史料图 + 对比修复 + 结构卡片 + 路线图 + 互动检测”的组合。图像修复先处理噪点、划痕、灰雾和局部模糊，再根据建筑材质、木质器物、水面反光等线索进行色彩渲染，让观众能把空间、器物和事件关系看得更清楚。",
     visual: `
-      <div class="method-list">
-        <div><b>史料底图</b><span>先看原始图，避免视觉效果压过史料本身。</span></div>
-        <div><b>辅助修复</b><span>保留“修复前/修复后”并列，明确修复图的推断属性。</span></div>
-        <div><b>关系重组</b><span>用时间线、矩阵、图谱把文字资料转成可扫读结构。</span></div>
-        <div><b>互动反馈</b><span>用选择题让观众确认自己理解的是历史逻辑而非表面信息。</span></div>
+      <div class="restoration-gallery">
+        <img src="assets/archive/artifact-restoration-collage.png" alt="石库门、会议桌、红船船舱与湖上画舫 AI 修复示意图">
+        <div class="restoration-notes">
+          <b>补充修复对象</b>
+          <span>石库门门楣、会议桌陈设、红船船舱、湖上画舫</span>
+          <b>渲染逻辑</b>
+          <span>从黑白资料的纹理、明暗、材质和环境线索出发，补充可辨认的色彩层次。</span>
+        </div>
       </div>`
   },
   {
-    kicker: "12 / 展陈脚本",
-    title: "如果做成 60 秒微视频，应围绕三个问题推进",
-    body: "短视频版本不需要把资料念成流水账。前 15 秒提出近代中国道路追问；中间 30 秒用上海会址、会议转移、南湖红船形成事件推进；最后 15 秒回到红船精神，说明它为什么能从一个历史现场转化为今天仍可理解的价值表达。",
+    kicker: "12 / 互动检测",
+    title: "三道选择题：把历史线索真正读懂",
+    body: "这一页用三道题检查观众是否理解作品的核心线索：一大会址为什么重要，南湖转移说明什么，AI 修复图应该怎样使用。答题后会即时显示对错和解释。",
     visual: `
-      <div class="storyboard">
-        <div><b>开场</b><span>黑白会址图淡入，字幕提出“为什么需要一个新的组织？”</span></div>
-        <div><b>转折</b><span>路线从上海移向嘉兴，强调外部干扰与会议继续。</span></div>
-        <div><b>完成</b><span>红船图出现，叠加纲领、决议、中央领导机构三个关键词。</span></div>
-        <div><b>收束</b><span>用首创、奋斗、奉献对应历史现场，而不是空喊口号。</span></div>
+      <div class="quiz-stack">
+        <div class="quiz-panel">
+          <h3>1. 一大会址在作品中最主要的作用是什么？</h3>
+          <div class="quiz-options">
+            <button data-ok="true">呈现组织创建从秘密会议开始的真实空间</button>
+            <button data-ok="false">证明会议只是一次普通参观活动</button>
+            <button data-ok="false">用建筑外观替代全部历史解释</button>
+          </div>
+          <p class="quiz-result"></p>
+        </div>
+        <div class="quiz-panel">
+          <h3>2. 上海到南湖的转移最能说明什么？</h3>
+          <div class="quiz-options">
+            <button data-ok="false">会议主题发生了根本改变</button>
+            <button data-ok="true">会议目标没有被干扰打断，议程继续完成</button>
+            <button data-ok="false">地点变化比会议成果更重要</button>
+          </div>
+          <p class="quiz-result"></p>
+        </div>
+        <div class="quiz-panel">
+          <h3>3. AI 修复图在本作品中应该怎样理解？</h3>
+          <div class="quiz-options">
+            <button data-ok="false">它就是原始彩色历史照片</button>
+            <button data-ok="false">它可以替代黑白史料图</button>
+            <button data-ok="true">它根据纹理、明暗和材质线索帮助观众辨认画面</button>
+          </div>
+          <p class="quiz-result"></p>
+        </div>
       </div>`
   },
   {
@@ -193,7 +219,9 @@ const pageNow = document.getElementById("pageNow");
 const pageTotal = document.getElementById("pageTotal");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
+const voiceBtn = document.getElementById("voiceBtn");
 let current = 0;
+let isSpeaking = false;
 
 function renderSlides() {
   pageTotal.textContent = String(slides.length);
@@ -228,6 +256,30 @@ function update() {
 function goTo(index) {
   current = Math.max(0, Math.min(slides.length - 1, index));
   update();
+  if (isSpeaking) speakCurrentSlide();
+}
+
+function getSlideSpeechText() {
+  const slide = slides[current];
+  return `${slide.kicker}。${slide.title}。${slide.body}`;
+}
+
+function speakCurrentSlide() {
+  if (!("speechSynthesis" in window)) {
+    voiceBtn.textContent = "不支持语音";
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(getSlideSpeechText());
+  utterance.lang = "zh-CN";
+  utterance.rate = 0.92;
+  utterance.pitch = 1;
+  utterance.onend = () => {
+    if (isSpeaking) voiceBtn.textContent = "语音播报";
+    isSpeaking = false;
+  };
+  voiceBtn.textContent = "停止播报";
+  window.speechSynthesis.speak(utterance);
 }
 
 renderSlides();
@@ -235,6 +287,16 @@ update();
 
 prevBtn.addEventListener("click", () => goTo(current - 1));
 nextBtn.addEventListener("click", () => goTo(current + 1));
+voiceBtn.addEventListener("click", () => {
+  if (isSpeaking) {
+    window.speechSynthesis?.cancel();
+    isSpeaking = false;
+    voiceBtn.textContent = "语音播报";
+    return;
+  }
+  isSpeaking = true;
+  speakCurrentSlide();
+});
 dots.addEventListener("click", (event) => {
   const target = event.target.closest(".dot");
   if (target) goTo(Number(target.dataset.index));
@@ -248,12 +310,14 @@ document.addEventListener("keydown", (event) => {
 document.addEventListener("click", (event) => {
   const option = event.target.closest(".quiz-options button");
   if (!option) return;
-  document.querySelectorAll(".quiz-options button").forEach((button) => {
+  const panel = option.closest(".quiz-panel");
+  panel.querySelectorAll(".quiz-options button").forEach((button) => {
     button.disabled = true;
     button.classList.toggle("correct", button.dataset.ok === "true");
     button.classList.toggle("wrong", button === option && button.dataset.ok !== "true");
   });
-  document.getElementById("quizResult").textContent = option.dataset.ok === "true"
-    ? "回答正确：关键不在地点变化本身，而在会议目标、组织纪律和建党议程没有被突发干扰打断。"
-    : "再想一想：南湖转移不是观光式换场，而是会议在风险环境中继续完成。";
+  const result = panel.querySelector(".quiz-result");
+  result.textContent = option.dataset.ok === "true"
+    ? "回答正确：这个选项抓住了页面要表达的历史逻辑。"
+    : "再想一想：请回到本页文字，看它强调的是空间、转移、修复方法中的哪一层关系。";
 });
