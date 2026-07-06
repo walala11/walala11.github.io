@@ -242,7 +242,6 @@ const slides = [
 ];
 
 const deck = document.getElementById("deck");
-const dots = document.getElementById("dots");
 const pageNow = document.getElementById("pageNow");
 const pageTotal = document.getElementById("pageTotal");
 const prevBtn = document.getElementById("prevBtn");
@@ -268,9 +267,6 @@ function renderSlides() {
       </section>`;
   }).join("");
 
-  dots.innerHTML = slides.map((_, index) =>
-    `<button class="dot" type="button" aria-label="第 ${index + 1} 页" data-index="${index}"></button>`
-  ).join("");
 }
 
 function update() {
@@ -278,7 +274,6 @@ function update() {
   pageNow.textContent = String(current + 1);
   prevBtn.disabled = current === 0;
   nextBtn.disabled = current === slides.length - 1;
-  document.querySelectorAll(".dot").forEach((dot, index) => dot.classList.toggle("active", index === current));
 }
 
 function goTo(index) {
@@ -325,11 +320,6 @@ voiceBtn.addEventListener("click", () => {
   isSpeaking = true;
   speakCurrentSlide();
 });
-dots.addEventListener("click", (event) => {
-  const target = event.target.closest(".dot");
-  if (target) goTo(Number(target.dataset.index));
-});
-
 document.addEventListener("keydown", (event) => {
   if (["ArrowDown", "PageDown", "ArrowRight", " "].includes(event.key)) goTo(current + 1);
   if (["ArrowUp", "PageUp", "ArrowLeft"].includes(event.key)) goTo(current - 1);

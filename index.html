@@ -10,11 +10,10 @@
   <main class="deck-shell" aria-live="polite">
     <section id="deck" class="deck"></section>
     <nav class="deck-controls" aria-label="翻页控制">
-      <button id="prevBtn" type="button">上一页</button>
-      <button id="voiceBtn" type="button">语音播报</button>
-      <div id="dots" class="dots" aria-label="页码导航"></div>
-      <button id="nextBtn" type="button">下一页</button>
+      <button id="prevBtn" class="arrow-btn" type="button" aria-label="上一页">‹</button>
+      <button id="nextBtn" class="arrow-btn" type="button" aria-label="下一页">›</button>
     </nav>
+    <button id="voiceBtn" class="voice-control" type="button">语音播报</button>
     <div class="page-indicator"><span id="pageNow">1</span>/<span id="pageTotal">20</span></div>
   </main>
   <script src="script.js"></script>

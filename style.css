@@ -685,24 +685,29 @@ h2 {
   z-index: 4;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   transform: translateX(-50%);
-  padding: 10px 14px;
+  padding: 10px;
   background: rgba(255, 252, 246, 0.88);
   border: 1px solid rgba(87, 58, 41, 0.14);
-  border-radius: 8px;
+  border-radius: 999px;
   box-shadow: 0 12px 28px rgba(55, 28, 18, 0.12);
   backdrop-filter: blur(8px);
 }
 
 .deck-controls button {
-  min-width: 74px;
-  padding: 9px 13px;
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  padding: 0 0 4px;
   color: #fff;
   background: var(--red-dark);
   border: 0;
-  border-radius: 6px;
+  border-radius: 50%;
   cursor: pointer;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .deck-controls button:disabled {
@@ -710,23 +715,19 @@ h2 {
   opacity: 0.35;
 }
 
-.dots {
-  display: flex;
-  gap: 7px;
-}
-
-.dot {
-  width: 9px;
-  height: 9px;
-  min-width: 9px;
-  padding: 0;
-  background: rgba(113, 24, 24, 0.28);
+.voice-control {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 5;
+  padding: 11px 16px;
+  color: #fff;
+  background: #8a4f16;
   border: 0;
-  border-radius: 50%;
-}
-
-.dot.active {
-  background: var(--red);
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(55, 28, 18, 0.14);
+  cursor: pointer;
+  font-weight: 700;
 }
 
 .page-indicator {
@@ -806,20 +807,20 @@ h2 {
   }
 
   .deck-controls {
-    width: calc(100vw - 24px);
-    justify-content: center;
-    gap: 10px;
+    gap: 14px;
   }
 
   .deck-controls button {
-    min-width: 62px;
-    padding: 8px 9px;
-    font-size: 13px;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 32px;
   }
 
-  .dots {
-    max-width: 35vw;
-    flex-wrap: wrap;
-    justify-content: center;
+  .voice-control {
+    right: 14px;
+    bottom: 82px;
+    padding: 9px 12px;
+    font-size: 13px;
   }
 }
