@@ -218,6 +218,21 @@ h2 {
   line-height: 1.65;
 }
 
+.source-grid-two article {
+  min-height: 250px;
+  padding: 26px 28px;
+}
+
+.source-grid-two b {
+  margin-bottom: 16px;
+}
+
+.source-grid-two span {
+  display: block;
+  font-size: clamp(15px, 1.2vw, 20px);
+  line-height: 1.8;
+}
+
 .timeline {
   padding: 24px;
 }
